@@ -51,17 +51,22 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-dark-mode`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        icon: `static/favicons/favicon.ico`,
+      }
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `ramblings`,
+        short_name: `ramblings`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `static/favicons/favicon-32x32.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
