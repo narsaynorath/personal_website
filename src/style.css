@@ -58,6 +58,10 @@
 
 /* HTML elements */
 
+* {
+  transition: color 0.2s ease-out, background 0.2s ease-out;
+}
+
 *,
 :after,
 :before {
