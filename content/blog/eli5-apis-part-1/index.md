@@ -35,7 +35,7 @@ But, alas! It's useless to me in this form. I need to know the total so I know h
 ```python
 def sum(numbers):
     """Use this to add up a list of numbers
-    
+
     Takes a list of numbers in the form [1, 2, 3, etc] as input
     and returns a number representing the total of every number
     in the list.
@@ -69,7 +69,7 @@ I woke up in a new Bugatti.
 
 What we just did here was used the API of a function in someone else's code to add up our coins. We didn't care about *how* it did it, all we knew is that it *could* do what we wanted (because we read the comment which we can trust 100% always) and what it needed to accomplish that. It could have called granny while it was counting up our coins, but in the end we only cared about our $$$ so mission accomplished.
 
-When working with APIs, we'll usually reach for some kind of documentation. The people who write software and its API usually want other people to use it, so in the documentation you'll find information on expected input/output and maybe any limitations of the software to keep in mind. This way, we can interact with the software in a predictable way be conforming to its interface. They get internet popularity, we get our Bugatti. The world's a happy place.
+When working with APIs, we'll usually reach for some kind of documentation. The people who write software and its API usually want other people to use it, so in the documentation you'll find information on expected input/output and maybe any limitations of the software to keep in mind. This way, we can interact with the software in a predictable way by conforming to its interface. They get internet popularity, we get our Bugatti. The world's a happy place.
 
 One thing you might have noticed is that we had to download the code that gave us the power to `sum` our list of coins. Well, we do complex things on the web every day and do you see your computer downloading code every time you want to do something? I hope not!
 
