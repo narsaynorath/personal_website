@@ -20,7 +20,7 @@ APIs work in a very similar way. A bunch of code somewhere out there is waiting 
 
 # My Little Piggy Bank
 
-Let's pretend we're making a program for a virtual piggy bank because we're trying to keep track of our R I C H E S. These are our coins we have in our piggy bank:
+Let's pretend we're making a program for a virtual piggy bank because we're trying to keep track of our R I C H E S. These are the coins we have in our piggy bank:
 
 #### **piggy_bank.py**
 
@@ -28,7 +28,7 @@ Let's pretend we're making a program for a virtual piggy bank because we're tryi
 coins = [10, 10, 25, 25, 5, 10]
 ```
 
-But, alas! It's useless to me in this form. I need to know the total so I know how much I need to save for my Bugatti. Well, after some intense Google searching we found some code that someone wrote to take a list of numbers and add them all up. Perfect!
+But, alas! It's useless to me in this form. I need to know the total so I know how much I need to save for my Bugatti. Well, after some intense Google searching we found code that someone wrote to take a list of numbers and add them all up. Perfect!
 
 #### **genius_sum.py**
 
@@ -67,10 +67,10 @@ print("I have this many cents: " + coins)
 
 I woke up in a new Bugatti.
 
-What we just did here was used the API of a function in someone else's code to add up our coins. We didn't care about *how* it did it, all we knew is that it *could* do what we wanted (because we read the comment which we can trust 100% always) and what it needed to accomplish that. It could have called granny while it was counting up our coins, but in the end we only cared about our $$$ so mission accomplished.
+We used the API of a function in someone else's code to add up our coins. We didn't care about *how* it did it, all we knew is that it *could* do what we wanted (because we read the comment which we can trust 100% always) and what it needed to accomplish that. It could have called granny while it was counting up our coins, but in the end we only cared about our $$$ so mission accomplished.
 
-When working with APIs, we'll usually reach for some kind of documentation. The people who write software and its API usually want other people to use it, so in the documentation you'll find information on expected input/output and maybe any limitations of the software to keep in mind. This way, we can interact with the software in a predictable way by conforming to its interface. They get internet popularity, we get our Bugatti. The world's a happy place.
+When working with APIs, it's usually a good idea to reach for some kind of documentation. The people who write software and its API usually want other people to use it, so in the documentation you'll find information on expected input/output and maybe any limitations of the software to keep in mind. This way, we can interact with the software in a predictable way by conforming to its interface. They get internet popularity, we get our Bugatti. The world's a happy place.
 
 One thing you might have noticed is that we had to download the code that gave us the power to `sum` our list of coins. Well, we do complex things on the web every day and do you see your computer downloading code every time you want to do something? I hope not!
 
-In the next article we'll discuss how we use APIs over the web so your computer doesn't need to work hard to deliver you those good good cat memes on your favourite application of choice.
+In the next article we'll discuss how we use APIs over the web so your computer doesn't need to work hard to deliver you those good good cat memes.
