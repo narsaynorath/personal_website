@@ -87,7 +87,10 @@ export const pageQuery = graphql`
         description
       }
     }
-    previous: markdownRemark(id: { eq: $previousPostId }) {
+    previous: markdownRemark(
+      frontmatter: { published: { eq: true } }
+      id: { eq: $previousPostId }
+    ) {
       fields {
         slug
       }
@@ -95,7 +98,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    next: markdownRemark(id: { eq: $nextPostId }) {
+    next: markdownRemark(
+      frontmatter: { published: { eq: true } }
+      id: { eq: $nextPostId }
+    ) {
       fields {
         slug
       }
