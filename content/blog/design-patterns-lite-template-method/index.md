@@ -28,12 +28,13 @@ Templates empower us to be predictable and more efficient because if we subscrib
 
 The powerful part of templates in our lives is that although everyone follows a similar template, how each and every person does the individual steps may be different.
 
-`SoftwareDeveloper`s, `InvestmentBanker`s, `UXDesigner`s, etc who are all `SalaryWorker`s follow this similar template, but they all have different "`Do work`" steps. If you were writing a program that simulated a bunch of different people going about their days, you might think that this template of how `SalaryWorker`s live is worth capturing as code.
+`SoftwareDeveloper`s, `InvestmentBanker`s, `UXDesigner`s, etc who are all `SalaryWorker`s follow this similar template, but they all have different "`Do work`" steps. If you were writing a program that simulated a bunch of different people going about their days (e.g. by calling some `live` method on people objects per day), you might think that this template of how `SalaryWorker`s live is worth capturing as code.
 
 Let's assume that everyone wakes up and goes to sleep the same way, but what's different is that they work differently. One way of coding `SoftwareDeveloper`s and `UXDesigner`s might go like this:
 
 ```python
 class SoftwareDeveloper:
+  # This method is called to tell the SoftwareDeveloper to live 1 day
   def live(self):
     self.wake_up()
     self.do_work()
@@ -49,6 +50,7 @@ class SoftwareDeveloper:
     print("I am going to sleep")
 
 class UXDesigner:
+  # This method is called to tell the UXDesigner to live 1 day
   def live(self):
     self.wake_up()
     self.do_work()
@@ -132,7 +134,7 @@ class SalaryWorker:
     pass
 ```
 
-The reason the method bodies are empty are that maybe some people don't have morning or evening things to do. When we have a template of a routine, there might be some steps that are optional. In fancy terms, these optional steps of a template are called _hooks_ and they allow you to inject some functionality at explicit times in the template (e.g. morning and evening) if your class needs it. I typically start work after having a cup of coffee and feeding my cat, so my `do_morning_stuff` method might look like:
+The reason the method bodies are empty is that maybe some people don't have morning or evening things to do. When we have a template of a routine, there might be some steps that are optional. In fancy terms, these optional steps of a template are called _hooks_ and they allow you to inject some functionality at explicit times in the template (e.g. morning and evening) if your class needs it. I typically start work after having a cup of coffee and feeding my cat, so my `do_morning_stuff` method might look like:
 
 ```python
 def do_morning_stuff(self):
